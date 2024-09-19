@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <div class="titulo">
+        <a href=""><img src="imagem/Biblioteca.png" alt=""></a>
+    </div>
+
+    <header>
+        <h1 id="Carregar">Carregar arquivo CSV</h1>
+        <form id="formCSV">
+            <input type="file" id="arquivoCSV" accept=".csv" style="display: none;">
+            <label for="arquivoCSV" id="fileLabel">Escolher arquivo</label>
+            <div id="btn">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <button id="fazNada" onclick="nada()">Livros</button>
+            <div id="livros-data"></div>
+        </div>
+
+        <div class="box">
+            <button id="fazNada" onclick="nada()">Autores</button>
+            <div id="autores-data"></div>
+        </div>
+
+        <div class="box">
+            <button id="fazNada" onclick="nada()">Estudantes</button>
+            <div id="estudantes-data"></div>
+        </div>
+
+        <div class="box">   
+            <button id="fazNada" onclick="nada()">Emprestimos</button>
+            <div id="emprestimos-data"></div>
+        </div>
+        <script>
+            function nada(){
+                alert("Faz nada")
+            }
+        </script>
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
